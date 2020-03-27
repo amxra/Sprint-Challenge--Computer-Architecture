@@ -16,7 +16,7 @@ CMP = 0b10100111 #added instructions for cmp, jmp, jeq n jnu
 JMP = 0b01010100
 JEQ = 0b01010101
 JNE = 0b01010110
-AND = 0b10101000
+AND = 0b10101000 #added instructions for and, or xor n not
 OR = 0b10101010
 XOR = 0b10101011
 NOT = 0b01101001
@@ -52,7 +52,7 @@ class CPU:
         CMP: self.handle_cmp,
         JMP: self.handle_jmp,
         JEQ: self.handle_jeq,
-        JNE: self.handle_jne
+        JNE: self.handle_jne,
         }
 
         self.halted = False
